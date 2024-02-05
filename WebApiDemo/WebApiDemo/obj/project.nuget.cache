@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "b7vdrWLJs6QgrK7BYgHfSCT7vWbEQbAogS/57K1EYt3uNu13AYkyWxfLMo1q0h9Uo6ZoGo90mNqSsgaFr/3DfQ==",
+  "dgSpecHash": "tBiJ1oakpBKqLfJRjcuQ+kLvzzlFDR+aAprkSZe0ui+CF6BlH8z20cQ2XflhhwALgQGn1OHZ7CPpayYfCDZYOg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\matej\\source\\repos\\WebApiDemo\\WebApiDemo\\WebApiDemo.csproj",
+  "projectFilePath": "C:\\dotNet\\WebApiDemo\\WebApiDemo\\WebApiDemo\\WebApiDemo.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

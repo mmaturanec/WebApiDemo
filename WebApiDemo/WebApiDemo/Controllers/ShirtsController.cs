@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using WebApiDemo.Models;
 
 namespace WebApiDemo.Controllers
 {
@@ -6,31 +7,46 @@ namespace WebApiDemo.Controllers
     [Route("api/[controller]")]
     public class ShirtsController : ControllerBase
     {
+        private List<Shirt> shirts = new List<Shirt>()
+        { 
+            new Shirt{ShirtId = 1, Brand = "My brand", Color = "Blue", Gender = "Men", Price = 30, Size = 10},
+            new Shirt{ShirtId = 2, Brand = "My brand", Color = "Yellow", Gender = "Men", Price = 35, Size = 12},
+            new Shirt{ShirtId = 3, Brand = "Your brand", Color = "Pink", Gender = "Women", Price = 28, Size = 8},
+            new Shirt{ShirtId = 4, Brand = "Your brand", Color = "Purple", Gender = "Women", Price = 30, Size = 9}
+        };
 
         [HttpGet]
-        public string GetShirts()
+        public IActionResult GetShirts()
         {
-            return "Reading all the shirts";
+            return Ok("Reading all the shirts");
         }
         [HttpGet("{id}")]
-        public string GetShirtById(int id)
+        public IActionResult GetShirtById(int id)
         {
-            return $"Reading shirt: {id}";
+            if (id <= 0)
+                return BadRequest();
+            
+            var shirt =  shirts.FirstOrDefault(x => x.ShirtId == id);
+            if(shirt == null)
+                return NotFound();
+            
+             return Ok(shirt);
+            
         }
-        [HttpPost]
-        public string CreateShirt()
+        [HttpPost] 
+        public IActionResult CreateShirt([FromBody]Shirt shirt)
         {
-            return "Creating a shirt";
+            return Ok("Creating a shirt");
         }
         [HttpPut("{id}")]
-        public string UpdateShirt(int id)
+        public IActionResult UpdateShirt(int id)
         {
-            return $"Updating a shirt: {id}";
+            return Ok($"Updating a shirt: {id}");
         }
         [HttpDelete("{id}")]
-        public string DeleteShirt(int id)
+        public IActionResult DeleteShirt(int id)
         {
-            return $"Deleting a shirt: {id}";
+            return Ok($"Deleting a shirt: {id}");
         }
     }
 }
