@@ -4084,24 +4084,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\matej\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Matej\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "W:\\dotNet\\WebApiDemo\\WebApiDemo\\WebApiDemo\\WebApiDemo.csproj",
+      "projectUniqueName": "C:\\dotNet\\WebApiDemo\\WebApiDemo\\WebApiDemo\\WebApiDemo.csproj",
       "projectName": "WebApiDemo",
-      "projectPath": "W:\\dotNet\\WebApiDemo\\WebApiDemo\\WebApiDemo\\WebApiDemo.csproj",
-      "packagesPath": "C:\\Users\\matej\\.nuget\\packages\\",
-      "outputPath": "W:\\dotNet\\WebApiDemo\\WebApiDemo\\WebApiDemo\\obj\\",
+      "projectPath": "C:\\dotNet\\WebApiDemo\\WebApiDemo\\WebApiDemo\\WebApiDemo.csproj",
+      "packagesPath": "C:\\Users\\Matej\\.nuget\\packages\\",
+      "outputPath": "C:\\dotNet\\WebApiDemo\\WebApiDemo\\WebApiDemo\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\matej\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Matej\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4109,7 +4104,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

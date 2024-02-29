@@ -2,13 +2,7 @@
 {
     public static class ShirtRepository
     {
-        private static List<Shirt> shirts = new List<Shirt>()
-        {
-            new Shirt{ShirtId = 1, Brand = "My brand", Color = "Blue", Gender = "Men", Price = 30, Size = 10},
-            new Shirt{ShirtId = 2, Brand = "My brand", Color = "Yellow", Gender = "Men", Price = 35, Size = 12},
-            new Shirt{ShirtId = 3, Brand = "Your brand", Color = "Pink", Gender = "Women", Price = 28, Size = 8},
-            new Shirt{ShirtId = 4, Brand = "Your brand", Color = "Purple", Gender = "Women", Price = 30, Size = 9}
-        };
+        private static List<Shirt> shirts = new List<Shirt>();
 
         public static List<Shirt> GetShirts()
         {
